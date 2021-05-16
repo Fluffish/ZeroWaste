@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.com.company.Controller">
    <children>
       <Label alignment="CENTER" layoutX="1.0" prefHeight="53.0" prefWidth="697.0" style="-fx-background-color: #F1CECB; -fx-border-color: white; -fx-border-width: 4;" text="ZeroWaste" textFill="#f3eaea">
          <font>
@@ -16,12 +16,12 @@
       </Label>
       <AnchorPane layoutY="53.0" prefHeight="309.0" prefWidth="137.0" style="-fx-background-color: #F1CECB;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="93.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Lieu de stockage" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#StorageRedirection" prefHeight="93.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Lieu de stockage" textFill="WHITE">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
             </Button>
-            <Button layoutY="86.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Mes Aliments" textFill="WHITE">
+            <Button layoutY="86.0" mnemonicParsing="false" onAction="#MyFoodRediction" prefHeight="93.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Mes Aliments" textFill="WHITE">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
@@ -31,14 +31,14 @@
                   <Font name="System Italic" size="14.0" />
                </font>
             </Button>
-            <Button layoutY="261.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Mon profil" textFill="WHITE">
+            <Button layoutY="261.0" mnemonicParsing="false" onAction="#MyProfil" prefHeight="86.0" prefWidth="137.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="Mon profil" textFill="WHITE">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <Label alignment="CENTER" layoutX="275.0" layoutY="68.0" prefHeight="39.0" prefWidth="319.0" text="RECETTES DISPONIBLES" textFill="#f1cecb" underline="true">
+      <Label alignment="CENTER" layoutX="203.0" layoutY="72.0" prefHeight="39.0" prefWidth="319.0" text="RECETTES DISPONIBLES" textFill="#f1cecb" underline="true">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
@@ -55,5 +55,6 @@
             <Font name="System Italic" size="12.0" />
          </font>
       </Label>
+      <Button layoutX="565.0" layoutY="74.0" mnemonicParsing="false" onAction="#MainPage" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #F1CECB; -fx-border-color: white;" text="page principale" textFill="#fffdfd" />
    </children>
 </AnchorPane>
