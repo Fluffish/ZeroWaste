@@ -21,16 +21,6 @@ public class Controller implements Initializable {
 
 
 
-    @FXML private Button SignInButton;
-
-
-
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
-
     @FXML
     public void SignInButtonAction(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent main_page = FXMLLoader.load(getClass().getResource("mainpage.fxml"));
@@ -97,6 +87,11 @@ public class Controller implements Initializable {
         scene = new Scene(homepage);
         stage.setScene(scene);
         stage.show();
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 
